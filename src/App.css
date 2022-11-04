@@ -1,0 +1,52 @@
+.wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Book Antiqua";
+}
+
+.watches {
+    display: flex;
+
+}
+.watch {
+    padding-top: 2rem;
+}
+
+.watch--item {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    grid-row-gap: 1rem;
+}
+
+input, label {margin-right: 20px}
+
+.clock {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    padding: 20px;
+    background-color: beige;
+}
+
+.clock-face {
+    margin: 25px;
+    font-weight: 800;
+    background-color: #f2f2b1;
+    padding: 25px;
+    text-align: center;
+}
+
+.delete {
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+.title {
+    text-align: center;
+    font-weight: 700;
+}
