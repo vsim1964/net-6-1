@@ -6,17 +6,17 @@ export default function Watches() {
 
   const [watches, setWatches] = useState([])
 
-  const handleAdd = watch => {
+  const handleAdd = (watch) => {
     setWatches(prevState => [...prevState, watch]);
   }
 
-  const handleDelete = id => {
+  const handleDelete = (id) => {
     setWatches(prevState => prevState.filter(i => i.id !== id));
   }
 
   return (
-    <div className="wrapper" data-testid="test">
-      <div className="wrapper--inner">
+    <div className="wrapper">
+      <div>
         <Form onAdd={handleAdd} />
         <WatchesList list={watches} onDelete={handleDelete} />
       </div>

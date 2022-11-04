@@ -1,7 +1,6 @@
 import {useState} from "react";
 import PropTypes from "prop-types";
-
-import Watch from "../models/Watch";
+import Watch from "../model/Watch";
 
 export default function Form({onAdd}) {
 
@@ -33,7 +32,7 @@ export default function Form({onAdd}) {
       <div className="form">
           <label htmlFor="title">Имя зоны</label>
           <input type="text" id="title" name="title" value={form.title} onChange={handleTitle} />
-          <label htmlFor="timeZone">Отклонение от GMT (например, +0430)</label>
+          <label htmlFor="timeZone">Отклонение от GMT (например, +4)</label>
           <input type="text" id="timeZone" name="timeZone" value={form.timeZone} onChange={handleTimeZone} />
           <button type="submit">Добавить часы</button>
       </div>
